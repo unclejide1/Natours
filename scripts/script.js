@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const budget = document.getElementById('budget').value;
         const activity = document.getElementById('activity').value;
         const destination = document.getElementById('destination').value;
+        const visitedDestinations = document.getElementById('visitedDestinations').value;
+        const otherActivities = document.getElementById('otherActivities').value;
+    
   
         const formData = {
           firstName,
@@ -23,7 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
           email,
           budget,
           activity,
-          destination
+          destination,
+          visitedDestinations: visitedDestinations || "none",
+          otherActivities: otherActivities || "none"
         };
   
         try {
