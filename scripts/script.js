@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
           // Reset the form and enable submit button
           form.reset();
-          submitButton.innerHTML = 'Next Step &rarr;';
+          submitButton.innerHTML = 'Submit &rarr;';
           submitButton.disabled = false;
         } catch (error) {
           // Handle error, maybe show an error message
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
           console.error('Error submitting form data:', error);
           
           // Re-enable the submit button
-          submitButton.innerHTML = 'Next Step &rarr;';
+          submitButton.innerHTML = 'Submit &rarr;';
           submitButton.disabled = false;
         }
       } else {
